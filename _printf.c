@@ -10,14 +10,13 @@
 */
 int _printf(const char *format, ...)
 {
-	int i = 0, n = 0;
+	int i = 0;
 	char c;
 	char *str;
 
 	va_list par;
 
 	va_start(par, format);
-	error(format);
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
@@ -45,4 +44,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(par);
 	_putchar('\n');
+	return (error(format));
 }

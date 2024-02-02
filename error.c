@@ -10,7 +10,7 @@
 int error(const char *format)
 {
     if (format == NULL)
-    {
         return (-1);
-    }
+    else
+	return (0);
 }

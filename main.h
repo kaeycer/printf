@@ -4,6 +4,6 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int error(const char *format);
-char print_string(char *str);
+void print_string(char *str);
 
 #endif

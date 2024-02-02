@@ -4,10 +4,8 @@
 /**
  * print_string - prints a string to the standard output
  * @str: string
- * 
- * Return: display to the screen
 */
-char print_string(char *str)
+void print_string(char *str)
 {
     int n = 0;
 
