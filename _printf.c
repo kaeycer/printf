@@ -44,5 +44,6 @@ int _printf(const char *format, ...)
 	}
 	va_end(par);
 	_putchar('\n');
-	return (error(format));
+	error(format);
+	return (_str_len(format));
 }
